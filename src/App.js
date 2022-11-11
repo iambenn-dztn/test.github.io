@@ -26,10 +26,6 @@ import Icon from "@mui/material/Icon";
 // Soft UI Dashboard PRO React components
 import SoftBox from "components/SoftBox";
 
-// Soft UI Dashboard PRO React example components
-import Sidenav from "examples/Sidenav";
-import Configurator from "examples/Configurator";
-
 // Soft UI Dashboard PRO React themes
 import theme from "assets/theme";
 import themeRTL from "assets/theme/theme-rtl";
@@ -138,19 +134,9 @@ export default function App() {
         <CssBaseline />
         {layout === "dashboard" && (
           <>
-            <Sidenav
-              color={sidenavColor}
-              brand={brand}
-              brandName="Soft UI Dashboard PRO"
-              routes={routes}
-              onMouseEnter={handleOnMouseEnter}
-              onMouseLeave={handleOnMouseLeave}
-            />
-            <Configurator />
             {configsButton}
           </>
         )}
-        {layout === "vr" && <Configurator />}
         <Routes>
           {getRoutes(routes)}
           <Route path="*" element={<Navigate to="/dashboards/default" />} />
@@ -162,19 +148,9 @@ export default function App() {
       <CssBaseline />
       {layout === "dashboard" && (
         <>
-          <Sidenav
-            color={sidenavColor}
-            brand={brand}
-            brandName="Soft UI Dashboard PRO"
-            routes={routes}
-            onMouseEnter={handleOnMouseEnter}
-            onMouseLeave={handleOnMouseLeave}
-          />
-          <Configurator />
           {configsButton}
         </>
       )}
-      {layout === "vr" && <Configurator />}
       <Routes>
         {getRoutes(routes)}
         <Route path="*" element={<Navigate to="/dashboards/default" />} />
