@@ -7,7 +7,6 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 import SoftButton from "components/SoftButton";
 import SoftInput from "components/SoftInput";
-import pageRoutes from "page.routes";
 
 import waves from "assets/images/shapes/waves-white.svg";
 
@@ -15,7 +14,6 @@ function Header() {
   return (
     <>
       <DefaultNavbar
-        routes={pageRoutes}
         action={{
           type: "external",
           route: "https://creative-tim.com/product/soft-ui-dashboard-pro-react",

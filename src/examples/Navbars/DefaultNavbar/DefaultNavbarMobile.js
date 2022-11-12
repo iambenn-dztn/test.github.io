@@ -1,34 +1,13 @@
-/**
-=========================================================
-* Soft UI Dashboard PRO React - v4.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import { useState } from "react";
 
-// prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 
-// @mui material components
 import Menu from "@mui/material/Menu";
-// import Grid from "@mui/material/Grid";
 
-// Soft UI Dashboard PRO React components
 import SoftBox from "components/SoftBox";
 
-// Soft UI Dashboard PRO React example components
 import DefaultNavbarLink from "examples/Navbars/DefaultNavbar/DefaultNavbarLink";
 
-// DefaultNavbar dropdown menus
 import PagesMenu from "examples/Navbars/DefaultNavbar/Menus/PagesMenu";
 import AuthenticationMenu from "examples/Navbars/DefaultNavbar/Menus/AuthenticationMenu";
 import ApplicationsMenu from "examples/Navbars/DefaultNavbar/Menus/ApplicationsMenu";
